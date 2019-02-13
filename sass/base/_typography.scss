@@ -1,0 +1,184 @@
+h1{
+	font-size: 12rem;
+	color: $color-white;
+	font-weight: 400;  
+}
+h2{
+	font-size: 1.5rem;
+	color: $color-white;
+	opacity: .7;
+	font-weight: 200;
+	text-transform: uppercase;  
+	letter-spacing: .5rem;
+}
+h3{
+	font-size: 4rem;
+	text-transform: uppercase;
+	color: $color-black; 
+	letter-spacing: 1.5px;
+	margin: 1rem 0;
+}
+h4{
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	color: $color-grey; 
+	letter-spacing: 1.5px;
+	font-weight: 500; 
+}
+
+/* ------------------------------------------------------------ *\
+	Custom Stylings
+\* ------------------------------------------------------------ */
+
+.price-title{
+	font-size: 2.7rem;
+	letter-spacing: 1px;
+	font-weight: 300; 
+	margin-bottom: 5rem; 
+}
+.price-tag{
+	color: $color-black;
+	font-size: 6rem; 
+	font-weight: 300; 
+	sup{
+		font-size: 3rem; 
+	}
+	.light-sm{
+	color: $text-light;
+	font-size: 2rem; 
+	}
+	&:after{
+		content: '';
+		display: block;
+		background-color: $color-black;
+		height: 3px;
+		width: 50%;
+		margin: 3rem auto;
+	}
+}
+.pricing-list{
+	color: $text-light;
+	font-size: 1.6rem; 
+	font-weight: 300; 
+	.bold{
+		font-weight: 500; 
+	}
+	.price-item{
+		margin-bottom: 1.5rem;
+
+		&:last-child{
+			margin-bottom: 5rem;
+		} 
+	}
+}
+
+#reversed-box{
+	background-color: $color-black;
+	color: $text-light;
+	padding: 7rem 2rem;
+
+	.price-tag{
+		color: $text-light;
+
+		&:after{
+			background-color: $text-light;
+		}
+	}
+	.price-title{
+		color: $color-white;
+		margin-bottom: 1rem; 
+	}
+	.price-title-sub{
+		margin-bottom: 5rem;
+		font-size: 1.6rem;  
+	}
+	.price-item--stars{
+		color: $color-stars;
+		font-size: 1.3rem;
+		.fa-star{
+			margin-left: .5rem;
+			&:first-child{
+				margin-left: 0;
+			} 
+		}
+	}
+	.btn{
+		&:hover{
+			border-color: $color-white;
+		}
+	}
+}
+.text-story{
+	font-size: 1.6rem;
+	margin-bottom: 3rem;  
+}
+
+
+/* ------------------------------------------------------------ *\
+	Helpers
+\* ------------------------------------------------------------ */
+.uppercase{
+	text-transform: uppercase;
+}
+.bold{
+	font-weight: bold;
+}
+.fz-xsm{
+	font-size: 1.3rem; 
+}
+.fz-sm{
+	font-size: 1.5rem;
+	letter-spacing: 2px; 
+}
+.fz-md{
+	font-size: 5rem; 
+}
+.fz-lg{
+	font-size: 8rem; 
+}
+
+.fz-i{
+	font-size: 7rem; 
+}
+.fz-xl{
+	font-size: 10rem; 
+}
+.text-light{
+	color: $text-light;
+	font-weight: 300;
+}
+.text-v-light{
+	color: $background-grey;
+	font-weight: 300;
+	opacity: .8;
+}
+.text-white{
+	color: $color-white;
+}
+.text-sm{
+	font-size: 1.5rem;
+	letter-spacing: 1px; 
+}
+.lsp-sm{
+	letter-spacing: 1px;
+}
+
+.align-right{
+	text-align: right;
+}
+/* ------------------------------------------------------------ *\
+	Fonts
+	font-family: 'Lato', sans-serif;
+	font-family: 'Barlow Condensed', sans-serif;
+\* ------------------------------------------------------------ */
+
+
+@include respond(phone){
+	h1{
+		font-size: 7rem !important; 
+	}
+	h2{
+		font-size: 2rem !important;
+		text-align: center; 
+	}
+}

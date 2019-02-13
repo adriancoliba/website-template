@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before{
+	margin: 0; padding: 0; box-sizing: inherit;
+}
+*:focus {
+    outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden; 
+  font-family: 'Lato', sans-serif;
+	
+	@include respond(desktop){
+		font-size: 62.5%; 
+	} 
+	@include respond(tablet){ 
+		font-size: 50%; 
+	}
+	@include respond(phone){
+		font-size: 45%; 
+	}
+}
+ul{
+	list-style: none;
+}
+ 
+a {
+  text-decoration: none; 
+}
+
+body{
+  	box-sizing: border-box;
+}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+.wrapper{
+	padding: 0 4rem;
+}

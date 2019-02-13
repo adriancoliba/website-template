@@ -1,0 +1,58 @@
+.footer{
+	border-top: 1px solid $color-black; 
+
+	.footer-contact-socials{
+		margin: 3rem 0;
+		color: $color-black;
+
+		.contact-ico{
+			font-size: 4rem; 
+			margin-bottom: 1rem; 
+		}
+		.contact-text{
+			font-size: 1.8rem; 
+		}
+	}
+	.footer-social-buttons{
+		background-color: $color-lgrey;
+		padding: 5rem 0;
+
+		a{
+			color: $color-black;
+			font-size: 3rem; 
+
+			&:hover{
+				color: $color-grey;
+			}
+		}
+		a+a{
+			margin-left: 4rem; 
+		}
+	}
+	.footer-official{
+		padding: 3rem 4rem;
+		font-size: 1.8rem; 
+		background-color: $bg-dark-grey;
+		display: flex;
+		justify-content: space-between;
+		color: #888888;
+
+		a{
+			color: #888888;
+		}
+	}
+}
+
+
+@include respond(phone){
+
+	.footer-contact-socials > div{
+		margin-top: 3rem !important; 
+	}
+	.col-sm-12-d-none{
+		display: none;
+	}
+	.footer-official{
+		text-align: center;
+	}
+}
